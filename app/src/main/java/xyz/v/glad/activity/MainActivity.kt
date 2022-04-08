@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         anonym_btn = findViewById(R.id.anonym_btn)
         anonym_btn.setOnClickListener {
             startActivity(Intent(this, AnonymousActivity::class.java))
-            overridePendingTransition(android.R.anim.slide_in_left,android.R.anim.slide_out_right)
+            overridePendingTransition(R.anim.screen_slide_in_from_right,R.anim.screen_slide_out_to_left)
         }
         
         transparentStatusBar()

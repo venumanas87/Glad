@@ -10,6 +10,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.FrameLayout
+import android.widget.ImageView
+import androidx.appcompat.content.res.AppCompatResources
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentContainerView
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -17,6 +21,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.card.MaterialCardView
 import xyz.v.glad.R
 import xyz.v.glad.fragment.HomeFragment
+import xyz.v.glad.fragment.MentorFragment
 
 class DashboardActivity : AppCompatActivity() {
     private lateinit var fragmentContainer:FragmentContainerView
@@ -24,9 +29,7 @@ class DashboardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
         fragmentContainer = findViewById(R.id.fragment_container)
-        supportFragmentManager.beginTransaction()
-            .add(R.id.fragment_container,HomeFragment())
-            .commit()
+        transactFragment(HomeFragment())
         val bottomNavigationView: BottomNavigationView =findViewById(R.id.bottom_nav);
         val menuView: BottomNavigationMenuView = bottomNavigationView.getChildAt(0) as BottomNavigationMenuView
 
@@ -34,7 +37,7 @@ class DashboardActivity : AppCompatActivity() {
 
             if (i == 2) {
 
-                val iconView: View = menuView.getChildAt(i).findViewById(com.google.android.material.R.id.navigation_bar_item_icon_view)
+                val iconView: ImageView = menuView.getChildAt(i).findViewById(com.google.android.material.R.id.navigation_bar_item_icon_view)
                 val layoutParams: ViewGroup.LayoutParams = iconView.layoutParams;
                 val displayMetrics: DisplayMetrics = resources.displayMetrics;
                 layoutParams.height =
@@ -44,25 +47,41 @@ class DashboardActivity : AppCompatActivity() {
                     TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 50f, displayMetrics)
                         .toInt()
                 iconView.layoutParams = layoutParams;
+                iconView.setColorFilter(ContextCompat.getColor(this, R.color.blue_main))
             }
-            bottomNavigationView.setOnNavigationItemSelectedListener { item->
+            bottomNavigationView.setOnItemSelectedListener{ item->
                 when(item.itemId){
                     R.id.home ->{
-                    true
+                       transactFragment(HomeFragment())
+                        true
+                    }
+
+                    R.id.mentor ->{
+                        transactFragment(MentorFragment())
+                        true
                     }
 
                     R.id.add ->{
                         showModal()
-                        true
+                        false
                     }
-
                     else -> {
-                        true
+                        false
                     }
                 }
+
             }
         }
     }
+
+    private fun transactFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragment_container,fragment)
+            commit()
+        }
+
+    }
+
     private fun showModal() {
         val btmsht = BottomSheetDialog(this)
         btmsht.requestWindowFeature(Window.FEATURE_NO_TITLE)

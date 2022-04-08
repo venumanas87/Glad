@@ -23,7 +23,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:menu="@menu/bottom_menu"
             app:itemIconSize="20dp"
-            app:itemIconTint="@color/blue_main"
             app:labelVisibilityMode="unlabeled"
             android:background="@color/bottom_nav"
             />

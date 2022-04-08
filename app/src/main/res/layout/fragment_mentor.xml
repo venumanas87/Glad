@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_holder"
+            android:paddingHorizontal="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/need_a_listener"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/raleway_bold"
+                    android:textSize="24sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="@string/we_have_more_than_500_certified_therapists"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="40dp">
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/round"
+                        app:tint="#476200EE"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginVertical="10dp"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/white"
+                            android:elevation="8dp"
+                            android:inputType="text"
+                            android:imeOptions="actionSearch"
+                            android:hint="@string/search_here"
+                            android:paddingVertical="10dp"
+                            android:paddingStart="50dp"
+                            android:textSize="19sp" />
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/search_ico"
+                            android:layout_marginStart="25dp"
+                            android:layout_centerVertical="true"
+                            android:elevation="9dp"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_therapists"
+            android:textSize="20sp"
+            android:textColor="@color/blue_main"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rcTherapists"
+            android:layout_marginTop="20dp"
+            tools:listitem="@layout/therapist_card"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            />
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

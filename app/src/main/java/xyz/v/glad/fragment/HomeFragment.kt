@@ -42,10 +42,6 @@ class HomeFragment : Fragment() {
         val nameTV:TextView = view.findViewById(R.id.nameTV)
         val name = MySp.get("nickname",requireContext())
         nameTV.text = "Hi $name,"
-
-
-
-
     }
 
 }

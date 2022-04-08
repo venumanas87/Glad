@@ -6,4 +6,8 @@
     <string name="view_all">View All</string>
     <string name="recently_played">Recently Played</string>
     <string name="type_here">Type here...</string>
+    <string name="need_a_listener">Need a listener?</string>
+    <string name="we_have_more_than_500_certified_therapists">We have more than 500+ certified therapists</string>
+    <string name="top_therapists">Top Therapists</string>
+    <string name="search_here">Search Here</string>
 </resources>
