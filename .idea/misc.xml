@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/drawable/et_bg.xml" value="0.1075" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1075" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/drawable/login_bg_drwbl.xml" value="0.240625" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/drawable/round.xml" value="0.1075" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/drawable/top_holder.xml" value="0.2222222222222222" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/activity_anonymous.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/activity_dashboard.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/bottom_sheet_msg.xml" value="0.22" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/layout/rp_card.xml" value="0.22447916666666667" />
+        <entry key="..\:/Venu/projects/Glad/app/src/main/res/menu/bottom_menu.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

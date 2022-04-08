@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item android:id="@+id/mentor"
+        android:title="Mentor"
+        android:icon="@drawable/mentor"/>
+
+    <item android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/plus"/>
+
+    <item android:id="@+id/community"
+        android:title="Community"
+        android:icon="@drawable/community"/>
+
+    <item android:id="@+id/journal"
+        android:title="Journal"
+        android:icon="@drawable/journal"/>
+
+
+</menu>

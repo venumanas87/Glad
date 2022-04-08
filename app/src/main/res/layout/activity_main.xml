@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:paddingHorizontal="20dp"
+    tools:context=".activity.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Glad"
+            android:textColor="@color/blue_main"
+            android:textSize="72dp"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Enter the world of mindfullness"
+            android:textColor="@color/blue_main"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:backgroundTint="@color/blue_main"
+            android:text="Continue with Google"
+            android:textColor="@color/white"
+            app:icon="@drawable/google"
+            app:iconSize="30dp"
+            app:iconTint="@color/white"
+            app:rippleColor="@color/black"
+            android:fontFamily="@font/raleway_bold"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:letterSpacing="0"
+            app:cornerRadius="10dp"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:id="@+id/anonym_btn"
+            android:backgroundTint="@color/white"
+            android:text="Continue as Anonymous"
+            android:textColor="@color/blue_main"
+            app:icon="@drawable/anonym_ico"
+            android:layout_marginTop="20dp"
+            app:iconSize="30dp"
+            app:strokeColor="@color/blue_main"
+            app:strokeWidth="1dp"
+            app:iconTint="@color/blue_main"
+            android:fontFamily="@font/raleway_bold"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:letterSpacing="0"
+            app:cornerRadius="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

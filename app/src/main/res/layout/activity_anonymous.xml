@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="20dp"
+    tools:context=".activity.AnonymousActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What's your nickname?"
+            android:textSize="24sp"
+            android:textColor="@color/blue_main"
+            android:fontFamily="@font/raleway_bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="45sp"
+            android:id="@+id/et_name"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/login_bg_drwbl"
+            android:backgroundTint="@color/blue_main"
+            android:textColor="#7DB7FF"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/blue_main"
+            android:fontFamily="@font/raleway_semibold"
+            android:letterSpacing="0"
+            android:text="Next  "
+            android:textAllCaps="false"
+            android:id="@+id/next_btn"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/next_ico"
+            app:iconGravity="end"
+            app:iconSize="30dp"
+            app:iconTint="@color/white"
+            app:rippleColor="@color/black" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

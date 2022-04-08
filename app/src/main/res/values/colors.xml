@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green">#004235</color>
+    <color name="dark_purple">#2F2B3C</color>
+    <color name="blue_main">#57009C</color>
+    <color name="anon_bg_color">#4FAA9B</color>
+    <color name="bottom_nav">#F8F8F8</color>
+    <color name="mood_tile_bg">#727FB4</color>
+    <color name="view_all_purple">#9957009C</color>
+    <color name="top_holder_blue">#F7F1FE</color>
+    <color name="tile_blue">#1A6200EE</color>
+    <color name="dark_grey">#1B1B1B</color>
+
+</resources>
